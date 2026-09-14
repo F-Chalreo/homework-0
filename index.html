@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de dado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card" aria-labelledby="titulo">
+      <p class="eyebrow">Simulador</p>
+      <h1 id="titulo">Lançamento de dado de 6 faces</h1>
+      <p class="description">
+        Clique no botão para sortear um valor aleatório de 1 a 6.
+      </p>
+
+      <div class="dice-display" aria-live="polite" aria-atomic="true">
+        <span class="dice-label">Resultado</span>
+        <strong id="result" class="dice-value">-</strong>
+      </div>
+
+      <button id="roll-button" type="button">Lançar dado</button>
+
+      <section class="history" aria-labelledby="historico-titulo">
+        <div class="history-header">
+          <h2 id="historico-titulo">Últimos lançamentos</h2>
+          <button id="clear-history-button" type="button" class="secondary-button">
+            Limpar histórico
+          </button>
+        </div>
+        <ol id="history-list">
+          <li class="empty-state">Nenhum lançamento ainda.</li>
+        </ol>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
